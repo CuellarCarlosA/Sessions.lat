@@ -1,0 +1,365 @@
+/*
+1. Posicionamiento (position in layout)
+2. Modelo de caja (box model) (margin, pading)
+3. Tipografia
+4. Visuales
+5. Miselaneos u otros
+*/
+:root{
+    /* Colores */
+    --violeta-logo: #8b008b;
+    --azul-a3: #084087;
+    --negro-n2: #2B3037;
+    --naranja-360: #C8671F;
+    --naranja-queratina: #F8783B;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Dm Sans" , sans-serif;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(grey , white );
+    width: 100%;
+    min-width: 288px;
+    height: 334px;
+    text-align: center;
+}
+header img{
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    align-self: center;
+}
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--negro-n2);
+}
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--violeta-logo);
+}
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 123px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 55px;
+    background-color: var(--violeta-logo);
+    box-shadow: 0 4px 8px rgba( 89, 73, 30, 0.16);
+    border: 2px solid var(--naranja-360);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/Vector.svg");
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.main-description-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-description-container--title{
+    width: 90%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-description-container .backgroundImage{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("./assets/SESSIONSPOSTERS_page-0001.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-description-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--azul-a3);
+}
+.main-description-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--violeta-logo);
+}
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    padding: 20px 10px;
+    background: linear-gradient(grey,white, #a49b94);
+}
+.main-product-detail .logo{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    background-image: url("./assets/logoVioleta.png");
+    background-size: cover;
+    background-position: center;
+    left: calc(50% - 75px);
+    background-repeat: no-repeat;
+}
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail--title h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
+    color: white;
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: var(--violeta-logo);
+}
+.products-detail--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #450B3E;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba( 0, 0, 0, 0.75);
+}
+.products-detail--card .desarrollo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("./assets/desarrollo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product--card-title{
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: whitesmoke;
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: papayawhip;
+}
+.products-detail--card .lupa{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("./assets/lupa.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.products-detail--card .pesos{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("./assets/pesosperron.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.products-detail--card .conejo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("./assets/conejo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.poster-img-container{
+    width: 100%;
+    min-width: 288px;
+    height: 50vh;
+    background-image: url("./assets/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.poster-img-container h2{
+    padding-top: 0px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.main-products-container{
+    width: 100%;
+    min-width: 288px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.main-products-container .products--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.products--title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--violeta-logo);
+}
+.products--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--negro-n2);
+}
+.products-container--slider{
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.products-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 300px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-color: var(--negro-n2);
+    border-radius: 15px;
+    box-shadow:10px 10px 5px 0px rgba( 0, 0, 0, 0.75);
+}
+.products-container--card .recomended{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15.5px;
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--violeta-logo);
+    border-radius: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.product-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: whitesmoke;
+}
+.products-container--card .img-queratina img{
+    width: 50px;
+    min-width: 140px;
+    max-width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.product-card--benefit{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: whitesmoke;
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background:linear-gradient(grey, white);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--negro-n2);
+}
+.right img{
+    width: 60%;
+    height: 30px;
+    max-width: 150px;
+}
