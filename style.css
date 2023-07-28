@@ -356,7 +356,8 @@ footer .left ul{
 }
 .left a {
     text-decoration: none;
-    color: var(--negro-n2);
+    color: var(--violeta-logo);
+    font-size: 2rem;
 }
 .right img{
     width: 60%;
